@@ -1,0 +1,34 @@
+<!-- main.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Encryption</h1>
+    <div id="messageDiv">
+      <textarea id="messageInput" placeholder="Enter the message to encrypt"></textarea>
+    </div>
+    <div>
+      <button id="encryptButton" onclick="chooseImage('encrypt')">Encrypt</button>
+    </div>
+    <div id="encryptionResult" style="display: none;">
+      <p id="encryptedText"></p>
+     
+    </div>
+    
+    <h1>Decryption</h1>
+    <div>
+      <button id="decryptButton" onclick="chooseImage('decrypt')">Decrypt</button>
+    </div>
+    <div id="decryptionResult" style="display: none;">
+      <p id="decryptedTextLabel">The decrypted message is:</p>
+       <p id="encryptedText"></p>
+    </div>
+  </div>
+</body>
+</html>

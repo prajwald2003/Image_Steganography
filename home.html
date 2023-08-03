@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Steganography</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="bg">
+
+  <div class="container">
+    <h1>Encryption</h1>
+    <button onclick="chooseImage('encrypt')">Encrypt Image</button>
+    <div id="encryptionResult" class="result" style="display: none;">
+        <h2 style="color: white;">Encrypted Message</h2>
+      <p id="encryptedText"></p>
+      <p id="encryptedImagePath"></p>
+    </div>
+    <h1>Decryption</h1>
+    <button onclick="chooseImage('decrypt')">Decrypt Image</button>
+    <div id="decryptionResult" class="result" style="display: none;">
+      <h2 style="color: white;">Decrypted Message</h2>
+      <p id="decryptedText"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
